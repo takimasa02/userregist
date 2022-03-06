@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ユーザー情報登録確認画面</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" href="image/fabicon.png">
+    </head>
+    <body>
+        <h1>ユーザー情報登録確認画面</h1>
+        <form action="userInfo_regist_fix.html" method="POST">
+        <P class="subtitle">プロフィール画像</P>
+        <p><img src="image/profile.jpg"></p>
+
+        <p class="subtitle">氏名</p>
+        <p><?=$lastname?> <?=$firstname?></p>        
+        
+        <p class="subtitle">氏名(かな)</p>
+        <p><?=$lastname_kana?> <?=$firstname_kana?></p>
+        
+        <p class="subtitle">性別</p>
+        <p><?=$sex?></p>
+        
+        <p class="subtitle">郵便番号:
+        <p><?=$zip_code?></p>
+        
+        <p class="subtitle">住所</p>
+        <p>都道府県：<?=$pref?></p>
+        <p>市区町村：<?=$city?></p>
+        <p>丁目・番地・号：<?=$address?></p>        
+        <p>建物名(部屋番号含む)：<?=$building?></p>        
+        
+        <p class="subtitle">電話番号</p>
+        <p><?=$tel?></p>
+        
+        <p class="subtitle">本サイトの使用目的</p>
+        <p><?=$sample?></p>         
+         
+		<p class="subtitle">本サイトを知った媒体</p>
+        <p>SNS/インターネット広告</p>
+
+        <p class="subtitle">ご意見</p>
+        <p><?=$question?></p>
+
+        <p><button type="button" onclick="history.back()">戻る</button></p>
+                <p><button type="submit" id="submit">登録</button></p>
+    
+    </body>
+</html>
